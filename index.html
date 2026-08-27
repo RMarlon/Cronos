@@ -1,24 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
 
-        <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-        <title>Cronos</title>
-    </head>
+    <title>Cronos</title>
+</head>
 
-    <body class="bg-gray-900">
-        <div class="container mx-auto">
-
+<body class="bg-gray-900">
+    <div class="container max-w-3xl mx-auto my-4 border">
+        <div class="border my-4">
+            <h1 class="">
+                Cronos
+            </h1>
+            <img src="/img/favicon/android-chrome-192x192.png" alt="imagem de corredor" 
+                class=""
+            >
         </div>
-    </body>
+
+        <!-- Time information -->
+
+        <section class="time-container border my-4">
+            <div class="">
+                <div class="">
+                    <h2>Data - Hora e Dia</h2>
+                    <p class="date">-/ -/ 2026</p>
+                    <p id="hours" class="hours">0:00.<small>00</small></p>
+                    <p>Segunda</p>
+                </div>
+                <div class="">
+                    <h2>Registrar distância</h2>
+                    <p>1 KM/h</p>
+                </div>
+            </div>
+            <button>Iniciar corrida</button>
+            <button>Pausar / Retornar</button>
+            <button>Finalizar Corrida</button>
+        </section> <!-- time-container -->
+        
+        <!-- results information -->
+        <section class="results-container border my-4">
+                <h2>Resultados</h2>
+                <div class="">
+                    <div class="">
+                        <h3>Distância Pecorrida</h3>
+                        <p>- KM/h</p>
+                    </div>
+                    <div class="">
+                        <h3>Data - hora e dia</h3>
+                        <p>-/ -/ 2026</p>
+                        <p class="">0:00.<small>00</small></p>
+                        <p>Domingo</p>
+                    </div>
+                </div>
+        </section> <!-- results information -->
+
+    </div> <!-- container  -->
+</body>
+
 </html>
